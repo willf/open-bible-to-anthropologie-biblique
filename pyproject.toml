@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "joyfully"
+name = "open_bible_to_anthropologie_biblique"
 version = "0.1.0"
-description = "Write more joyful code"
+description = "Convert Open Bible to Anthropologie Biblique format"
 authors = ["Will Fitzgerald <37049+willf@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "joyfully", from = "src"}]
+packages = [{include = "open_bible_to_anthropologie_biblique", from = "src"}]
 license = "MIT"
 
 [tool.poetry.dependencies]

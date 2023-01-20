@@ -1,4 +1,6 @@
-from joyfully.joyfully import hello_world
+from open_bible_to_anthropologie_biblique.open_bible_to_anthropologie_biblique import (
+    hello_world,
+)
 
 
 def test_hello_world():
