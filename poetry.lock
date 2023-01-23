@@ -119,6 +119,28 @@ pipfile-deprecated-finder = ["pipreqs", "requirementslib"]
 plugins = ["setuptools"]
 
 [[package]]
+name = "jinja2"
+version = "3.1.2"
+description = "A very fast and expressive template engine."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+MarkupSafe = ">=2.0"
+
+[package.extras]
+i18n = ["Babel (>=2.7)"]
+
+[[package]]
+name = "markupsafe"
+version = "2.1.2"
+description = "Safely add untrusted strings to HTML/XML markup."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
 name = "mypy-extensions"
 version = "0.4.3"
 description = "Experimental type system extensions for programs checked with the mypy typechecker."
@@ -232,7 +254,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7" # minimum version.
-content-hash = "ae982baaebb960510d3b5f44ac0f563fb26f60c44826af9d74a5a3310b2b5c68"
+content-hash = "c2d43cd9be531802fdefcdfe334153c3feeebf82eed83ecba5c6cf190342465b"
 
 [metadata.files]
 attrs = []
@@ -244,6 +266,8 @@ exceptiongroup = []
 importlib-metadata = []
 iniconfig = []
 isort = []
+jinja2 = []
+markupsafe = []
 mypy-extensions = []
 packaging = []
 pathspec = []

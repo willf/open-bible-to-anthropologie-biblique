@@ -1,0 +1,18 @@
+---
+bibleKeys :
+{%- for key in bible_keys %}
+- {{ key }} {{ chapter_number }}
+{%- endfor %}
+tags :
+{% for tag in tags %}
+- {{ tag }}
+{%- endfor %}
+{%- if css_class %}css_class : {{ css_class }}{%- endif %}
+direction : {% if direction %}{{ direction }}{%- else %} ltr {% endif %}
+---
+# {{ book }} {{ chapter_number }}
+
+{% for verse in verses %}
+###### {{ loop.index }}
+{{ verse }}
+{%- endfor %}
